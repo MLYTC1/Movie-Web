@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    align-items: center;
+    background-color: black;
+}
+.logoDiv > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.searchAndLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.searchAndLogin > h2 {
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.searchAndLogin > h2:hover {
+    background-color: hsl(0, 0%, 15%);
+}
+.searchAndLogin > div > input{
+    padding: 15px;
+    margin-left: 15px;
+    width: 350px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.contentDiv{
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+.contentDiv > p{
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.contentDiv>p:hover{
+    background-color: hsl(0, 0%, 15%);
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logoDiv>img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .searchAndLogin {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .searchAndLogin>div>input {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .contentDiv>p,
+    .searchAndLogin>h2 {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logoDiv>img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .searchAndLogin>div>input {
+        width: 300px;
+    }
+
+    .contentDiv {
+        gap: 15px;
+    }
+    .contentDiv>p,
+    .searchAndLogin>h2 {
+        font-size: 1.1rem;
+    }
+
+
+    .contentDiv {
+        flex-wrap: wrap;
+    }
+        
+}
+
+
+
+
