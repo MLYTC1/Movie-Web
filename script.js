@@ -1,5 +1,5 @@
-function toggleMenu() {
-    const menu = document.querySelector('.mobile-menu');
-    menu.classList.toggle('active');
-}
-
+$(document).ready(function() {
+    $('.faq-item').click(function() {
+        $(this).toggleClass('open');
+    });
+});

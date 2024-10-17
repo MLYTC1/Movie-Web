@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -111,7 +116,603 @@ header{
     }
         
 }
+.firstSection {
+    background-image: url(https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQSKVC4S7iOXo0h3DWlk2PMpvWhm3r87L02bUk9kWRRuyGzIFJ6Nms1cyddW6tFERzlNdJR3BCQUCC1HhLMglXTyfFYFF4EVxVElBDiokg12YI6vlfBZRQI3B2ft7F2HJalvNwiO9Z0zXnZOGfTXqoQg-bV4.jpg?r=99f);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+.getStartedDivText > h1{
+    font-size: 2.2rem;
+    width: 60%;
+    padding-bottom: 15px;
+    line-height: 3.2rem;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.getStartedDivText > p{
+    opacity: 0.5;
+    letter-spacing: 0.1rem;
+}
+.getStartedDivBtn > button{
+    padding: 13px;
+    width: 20rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.050rem;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: hsl(80, 62%, 44%);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.getStartedDivBtn>button:hover{
+    background-color: hsl(80, 62%, 54%);
+    color: red;
+}
+.getStartedDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    margin: 20px;
+}
+.mostMatchedDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid white;
+    padding: 15px;
+    /* padding-left: 150px;
+    padding-right: 150px; */
+    border-radius: 30px;
+    height: 560px;
+    background-color: rgb(57, 35, 35);
+}
+.mostMatchedDivMoviesImgDiv >img{
+    width: 140px;
+    height: 80px;
+    border-radius: 15px;
+}
+.mostMatchedDivMovies{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+    padding: 2rem;
+    width: 400px;
+    height: auto;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100px;
+    align-items: center;
+    border-radius: 30px;
+}
+.mostMatchedDivTitle > h2{
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+.mostMatchedDivMoviesPlatform > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 2rem;
+    object-fit: contain;
+}
+.mostMatchedDivMoviesText{
+    text-align: center;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem; 
+}
+.mostMatchedDivMoviesText > p:nth-child(1){
+    color: aliceblue;
+}
+.mostMatchedDivMoviesText>p:nth-child(2) {
+    color: yellowgreen;
+}
+/* .mostMatchedDivMoviesMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+.secondSection {
+    height: 100vh;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.secondSectionMainDiv {
+    display: flex;
+    flex-direction: row;
+    /* background-color: hsl(0, 15%, 21%); */
+    background: url(https://www.nischenkino.de/wp-content/uploads/2022/11/the-northman-title.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 70%;
+    color: aliceblue;
+}
+.secondSectionContentMoviesDiv > div > img {
+    width: auto 200px;
+    height: 130px;
+}
+.secondSectionContentMoviesDiv{
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.secondSectionContentMovies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 880px){
+    .secondSectionContentMovies>:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+    .secondSectionContentMovies>:nth-child(2){
+        display: none;
+    }
+    .secondSectionContentMovies>:nth-child(3) {
+        display: none;
+    }
+}
+.secondSectionMainDivLEFT{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 300px;
+}
+.secondSectionContent{
+    display: flex;
+    flex-direction: column;
+}
+.secondSectionContentLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 350px;
+    margin-right: 100px;
+    padding: 10px;
+}
+.secondSectionContentLeftBtn > button{
+    padding: 0.7rem;
+    width: 8rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: hsl(0, 100%, 50%);
+    cursor: pointer;
+    transition: 0.25s;
+}
+.secondSectionContentLeftBtn>button:hover{
+    background-color: hsl(0, 100%, 60%);
+}
+.secondSectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    margin: 100px;
+    width: 80%;
+}
+.M{
+    background-color: black;
+    height: 200px;
+    padding: 100px;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+
+.genresSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh auto;
+    background-color: black;
+}
+.genresSectionTitle > h1{
+    font-weight: bolder;
+    font-size: 2.6rem;
+
+}
+.genresSectionMovies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 40px;
+}
+.genresSectionMoviesChild1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.genresSectionMoviesChild1 > div{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    border: 2px solid antiquewhite;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.genresSectionMoviesChild2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+.genresSectionMoviesChild2>div {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    border: 2px solid antiquewhite;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.genresSectionMoviesChild2>div:hover,.genresSectionMoviesChild1>div:hover{
+    box-shadow: 0 2rem 4rem -2rem rgb(242, 226, 226);
+    transform: scale(1.05);
+    border-radius: 20px;
+    color: greenyellow;
+    text-shadow: 0 2rem 4rem -2rem rgb(173, 255, 47);
+}
 
 
 
 
+
+
+
+
+.testimonials-box {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.testimonials .heading {
+    margin-bottom: 5rem;
+}
+
+.testimonials-box img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.wrapper {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.testimonial-item {
+    min-height: 550px;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.testimonial-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(-10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.testimonial-item h2 {
+    font-size: 2.8rem;
+}
+
+.testimonial-item p {
+    font-size: 1.3rem;
+}
+.testimonials{
+    background-color: black;
+    height: auto;
+    padding-bottom: 150px;
+}
+
+.heading{
+    color: #00ffee;
+    font-size: 2.2rem;
+    margin-top: 300px;
+}
+body {
+     cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1156.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1156.png), auto !important;
+ }
+ .infoSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .infoSectionBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55vh;
+    width: 100%;
+    background-color: rgb(101, 57, 97);
+    gap: 80px;
+    color: #00ffee;
+ }
+ .infoSectionBottomTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+ }
+ .infoSectionBottomTop >div> p{
+    font-size: 1.2rem;
+ }
+  .infoSectionBottomTop>div>h1 {
+      font-size: 2rem;
+  }
+ .infoSectionBottomBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+ }
+.infoSectionBottomBottom > div > h1{
+    font-size: 2rem;
+}
+ .infoSectionBottomBottom > div > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+ }
+ .infoSectionTop{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    color: #00ffee;
+    background: url(https://png.pngtree.com/background/20230616/original/pngtree-large-group-of-people-are-standing-together-in-one-place-picture-image_3620337.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.infoSectionTop>div{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.infoSectionTop>div>h1{
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.FrequentlyAsked{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh auto;
+    padding: 120px;
+    background-color: black;
+}
+.FrequentlyAskedTitle > h1{
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.FrequentlyAskedQuestions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 60%;
+    gap: 40px;
+}
+.FrequentlyAskedQuestions > div{
+    border: 2px solid black;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-weight: bolder;
+}
+.FrequentlyAskedQuestions>div>h1 {
+    font-size: 2rem;
+
+}
+.plusIcon{
+    cursor: pointer;
+}
+.FrequentlyAskedTitle{
+    margin-bottom: 40px;
+}
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+    border-top: 1px solid #00ffee;
+    color: white;
+}
+.FooterLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: white;
+}
+.FooterLinks > h4{
+    font-size: 2.5rem;
+}
+.FooterMiddle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 20%;
+    gap: 20px;
+    text-align: center;
+}
+.FooterMiddleParagraph{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.FooterLogo > img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.FooterIcons{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.FooterContactDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.FooterContactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.FooterContactForm > input:nth-child(1){
+    padding: 20px;
+    width: 300px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.FooterContactForm>input:nth-child(2) {
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.FooterContactBtn > button{
+    padding: 15px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0.9;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
