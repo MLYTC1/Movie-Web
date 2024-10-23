@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/movies.css">
+</head>
+<body>
+     <!--header part-->
+     <header>
+        <!--Logo + Name-->
+        <div class="first-header-div">
+            <img src="/images/logo.png" alt="">
+        </div>
+
+        <!--second header  div -->
+        <div class="second-header-div">
+            <p class="logIn-p"><a href="#">Log In</a></p>
+
+            <!--Search-->
+            <div class="search-div">
+                <input class="search-input" type="text" placeholder="Search...">
+                <img src="/images/Search-icon.png" alt="">
+            </div>
+
+
+            <!--links of pages-->
+            <nav>
+                <p><a href="#">Home</a></p>
+                <p><a href="/movies.html">Movies</a></p>
+                <p><a href="/Articles.html">Articles</a></p>
+                <p><a href="#">My account</a></p>
+            </nav>
+        </div>
+    </header>
+
+    <!--main part -->
+    <main>
+        <section clas="first-main-section">
+            <div class="categories">
+                <!--genres-->
+                <select  id="Genre" name="Genre">
+                    <option value="genres">Genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="History">History</option>
+                    <option value="Fantacy">Fantacy</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Thriller">Thriller</option>
+                </select>
+
+                <!--years-->
+                <select name="Year" id="Year">
+                    <option value="Year">Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                    <option value="2022">2009</option>
+                    <option value="2022">2008</option>
+                    <option value="2022">2007</option>
+                    <option value="2022">2006</option>
+                    <option value="2022">2005</option>
+                    <option value="2022">2004</option>
+                    <option value="2022">2003</option>
+                    <option value="2022">2002</option>
+                    <option value="2022">2001</option>
+                    <option value="2022">2000</option>
+                </select>
+
+                <!--imdb-->
+                <select name="IMDB" id="IMDB">
+                    <option value="IMDB">IMDB</option>
+                    <option value="1.0">1.0</option>
+                    <option value="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                    <option value="1.0">5.0</option>
+                </select>
+
+                <!--country-->
+                <select name="Country" id="Country">
+                    <option value="Country">Country</option>
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Jepan">Jepan</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Spain">Spain</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Switzerland">Switzerland</option>
+                </select>
+
+                <div class="search-movie-div">
+                    <p>Search</p>
+                </div>
+            </div>
+        </section>
+        
+        <!--movies-->
+        <section class="second-main-section">
+            <div class="mother-movies">
+                <!--child1-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+            
+                <!--child2-->
+                <div class="child-movies">
+                    <img src="/images/movie2.jpg" alt="">
+                    <p class="movie-title">Prison Break</p>
+                    <p class="additional-info">2005 ‧ Drama ‧ 5 seasons</p>
+                </div>
+                
+                <!--child3-->
+                <div class="child-movies">
+                    <img src="/images/movie3.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child4-->
+                <div class="child-movies">
+                    <img src="/images/movie4.jpg" alt="">
+                    <p class="movie-title">The Godfather</p>
+                    <p class="additional-info">1972 ‧ Crime/Crime ‧ 2h 55m</p>
+                </div>
+                
+                <!--child5-->
+                <div class="child-movies">
+                    <img src="/images/movie5.jpg" alt="">
+                    <p class="movie-title">Schindler's List</p>
+                    <p class="additional-info">1993 ‧ War/Drama ‧ 3h 15m</p>
+                </div>
+                
+                <!--child6-->
+                <div class="child-movies">
+                    <img src="/images/movie6.jpg" alt="">
+                    <p class="movie-title">Inception</p>
+                    <p class="additional-info">2010 ‧ Scifi/Action ‧ 2h 28m</p>
+                </div>
+                
+                <!--child7-->
+                <div class="child-movies">
+                    <img src="/images/movie7.jpg" alt="">
+                    <p class="movie-title">Interstellar</p>
+                    <p class="additional-info">2014 ‧ Sci-fi/Adventure ‧ 2h 49m</p>
+                </div>
+                
+                <!--child8-->
+                <div class="child-movies">
+                    <img src="/images/movie8.jpg" alt="">
+                    <p class="movie-title">Saving Private Ryan</p>
+                    <p class="additional-info">1998 ‧ War/Action ‧ 2h 49m</p>
+                </div>
+                
+                <!--child9-->
+                <div class="child-movies">
+                    <img src="/images/movie9.jpg" alt="">
+                    <p class="movie-title"> The Pianist</p>
+                    <p class="additional-info">2002 ‧ War/Drama ‧ 2h 30m</p>
+                </div>
+                
+                <!--child10-->
+                <div class="child-movies">
+                    <img src="/images/movie10.jpg" alt="">
+                    <p class="movie-title">The Matrix</p>
+                    <p class="additional-info" >1999 ‧ Action/Sci-fi ‧ 2h 16m</p>
+                </div>
+                
+                <!--child11-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+            
+                <!--child12-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child13-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child14-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child15-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child16-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child17-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child18-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child19-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child20-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+
+
+                <!--child21-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+            
+                <!--child22-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child23-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child24-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child25-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child26-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child27-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child28-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child29-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child30-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+
+                <!--child31-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+            
+                <!--child32-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child33-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child34-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title"> Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child35-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p>Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child36-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child37-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child38-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child39-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child40-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+
+                <!--child41-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+            
+                <!--child42-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child43-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child44-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child45-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child46-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child47-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child48-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child49-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+                </div>
+                
+                <!--child50-->
+                <div class="child-movies">
+                    <img src="/images/movie1.jpg" alt="">
+                    <p class="movie-title">Hacksaw Ridge</p>
+                    <p class="additional-info">2016 ‧ War/Drama ‧ 2h 19m</p>
+            
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!--footer-->
+    <footer>
+        <!--logo and the website name-->
+        <div class="footer-logo-div">
+            <img src="/images/logo.png" alt="">
+        </div>
+
+        <!--div that involves quick links, about paragraph , contact us-->
+        <div class="second-footer-div">
+            <!--quick links-->
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <div class="child-quick-links">
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">Movies</a></p>
+                    <p><a href="#">Articles</a></p>
+                    <p><a href="#">My account</a></p>
+                </div>
+            </div>
+
+            <!--about p-->
+            <div class="about-web">
+                <p>
+                    CineMatch offers personalized movie recommendations 
+                    tailored to your unique interests, helping you discover 
+                    the perfect film for any mood. Join us and elevate your 
+                    movie-watching experience!
+                </p>
+            </div>
+
+            <!--contact us -->
+            <div class="contact"> 
+                <h2>Contact Us</h2>
+                <form class="footer-form">
+                    <input type="email" placeholder="Enter Your Email"> <br>
+                    <input id="message-input" type="text" placeholder="Your Message">
+                    <input id="button-input" type="button" value="Send">
+                </form>
+            </div>
+        </div>
+
+
+        <!--icons-->
+        <div class="footer-icons">
+            <!--facebook icon-->
+            <div class="icon facebook">
+                <img src="/images/facebook-ico.png" alt="">
+            </div>
+            
+            <!--insta icon-->
+            <div class="icon instagram">
+                <img src="/images/instagram-icon.png" alt="">
+            </div>
+
+            <!--twitter icon-->
+            <div>
+                <img src="/images/twitter-icon.png" alt="">
+            </div>
+
+            <!--youtube icon-->
+            <div>
+                <img src="/images/youtube-icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="ending">
+            <p>© 2024 CineMatch, Inc. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: #000;
+    color:#fff;
+    font-family:Playfair Display;
+
+}
+
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height:100px;
+
+
+    gap:15%;
+}
+
+/* first header div - logo+name */
+.first-header-div{
+    color:#000;
+  
+}
+
+/* Second header div - paragraphs + navbar */
+.second-header-div{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    
+    gap:30px;
+    margin-top:15px;
+}
+
+.logIn-p a{
+    text-decoration: none;
+    color:#fff;
+    font-size:18px;
+}
+
+/* search div- input + img */
+.search-div{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.search-input{
+    position:relative;
+    width:350px;
+    height:30px;
+    border-radius:20px;
+    padding-left:15px;
+    font-family:Playfair Display;
+}
+
+.search-div img{
+    position:absolute;
+    left:90%;
+    width:15px;
+    height:16px;
+}
+
+/* navbar */
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+    gap:30px;
+}
+
+nav p {
+    font-size:18px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/*styling the main part */
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/*left content vs right content */
+.first-main-section{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top:100px;
+
+    gap:8%;
+}
+
+
+/*mother of left */
+.mother-left-content{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    gap:80px;
+}
+
+/* children of left content */
+.child-left-content{
+    display:flex;
+    flex-direction:column;
+
+}
+
+.child-left-content img{
+    width:800px;
+    height:450px;
+    border-radius:1.5px;
+}
+
+/* div under the img */
+.ratings{
+    display:flex;
+    flex-direction:row;
+    margin-top:1.5rem;
+    gap:5%;
+    
+}
+
+.iconVstext{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    gap:5px;
+}
+
+.heartIcon p{
+    margin-top:-5px;
+}
+
+.ratingIcon p{
+    margin-top:-5px;
+}
+.iconVstext img{
+    width:18px;
+    height:18px;
+}
+
+.article-title{
+    margin-top:1rem;
+    font-size:25px;
+    width:max-content;
+    line-height:35px;
+}
+.articleText{
+    width:815px;
+    margin-top:1rem;
+    font-size:17.2px;
+    font-weight: 400;
+}
+
+.pageNumbers{
+    display:flex;
+    flex-direction:row;
+    gap:2rem;
+}
+
+.pageNumbers  a{
+    text-decoration: none;
+    color:#fff;
+    font-size:20px;
+}
+/* right content*/
+.right-content{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.title-of-right-content{
+    font-size:25px;
+}
+
+.mother-of-news-div{
+    display:flex;
+    flex-direction:column;
+    margin-top:2rem;
+
+    gap:1rem;
+}
+
+.child-of-news{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+    gap:3%;
+}
+
+.child-of-news img{
+    width:120px;
+    height:120px;
+    border-radius:1px;
+    filter:brightness(1);
+    object-fit: cover;
+}
+
+.extract-from-news{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-title{
+    font-weight: bolder;
+    width:max-content;
+    text-align:right;
+}
+
+.extract{
+    width:140px;
+    text-align:center;
+    font-size:14px;
+    margin-top:15px;
+
+}
+
+
+/* styling the footer part */
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:200px;
+}
+
+.footer-logo-div img{
+    height:60px;
+}
+
+
+/* div that involves - quick links  , paragraph , contact */
+.second-footer-div{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+
+    gap:22%;
+    margin-top:50px;
+}
+
+.quick-links{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-links h2{
+    width:max-content;
+}
+.child-quick-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top:20px;
+    gap:10px;
+}
+
+.child-quick-links  a{
+    font-size:18px;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+
+.about-web p{
+    text-align: center;
+    width:400px;
+}
+
+.contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+
+}
+
+.footer-form{
+    margin-top:5px;
+}
+
+.footer-form input{
+    width:180px;
+    height:40px;
+    border-radius: 4px;
+    padding-left:5px;
+    font-family:Playfair Display;
+    margin-top:5px;
+}
+
+#message-input{
+    height:60px;
+    padding-bottom:20px;
+}
+
+#button-input{
+    width:100px;
+    margin-left:35px;
+    height:30px;
+    font-size: 15px;
+    transition:0.5s;
+}
+
+#button-input:hover{
+    background-color: #A72929;
+    cursor:pointer;
+}
