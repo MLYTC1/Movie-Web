@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: #000;
+    color:#fff;
+    font-family:Montserrat;
+
+}
+
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height:100px;
+
+
+    gap:15%;
+}
+
+/* first header div - logo+name */
+.first-header-div{
+    color:#000;
+  
+}
+
+/* Second header div - paragraphs + navbar */
+.second-header-div{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    
+    gap:30px;
+    margin-top:15px;
+}
+
+.logIn-p a{
+    text-decoration: none;
+    color:#fff;
+    font-size:18px;
+}
+
+/* search div- input + img */
+.search-div{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.search-input{
+    position:relative;
+    width:350px;
+    height:30px;
+    border-radius:20px;
+    padding-left:15px;
+    font-family:Playfair Display;
+}
+
+.search-div img{
+    position:absolute;
+    left:90%;
+    width:15px;
+    height:16px;
+}
+
+/* navbar */
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+    gap:30px;
+}
+
+nav p {
+    font-size:18px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/* footer */
+/* styling the footer part */
+footer{
+    border-top: 1px solid red;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:200px;
+}
+
+.footer-logo-div img{
+    height:60px;
+}
+
+
+/* div that involves - quick links  , paragraph , contact */
+.second-footer-div{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+
+    gap:22%;
+    margin-top:50px;
+}
+
+.quick-links{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-links h2{
+    width:max-content;
+}
+.child-quick-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top:20px;
+    gap:10px;
+}
+
+.child-quick-links  a{
+    font-size:18px;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+
+.about-web p{
+    text-align: center;
+    width:400px;
+}
+
+.contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+
+}
+
+.footer-form{
+    margin-top:5px;
+}
+
+.footer-form input{
+    width:180px;
+    height:40px;
+    border-radius: 4px;
+    padding-left:5px;
+    font-family:Playfair Display;
+    margin-top:5px;
+}
+
+#message-input{
+    height:60px;
+    padding-bottom:20px;
+}
+
+#button-input{
+    width:100px;
+    margin-left:35px;
+    height:30px;
+    font-size: 15px;
+    transition:0.5s;
+}
+
+#button-input:hover{
+    background-color: #A72929;
+    cursor:pointer;
+}
+
+/* Main section 1 */
+main{
+    margin-inline: 600px;
+}
+.section-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.profile-pic{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: url(img/IMG_2021.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 10px;
+}
+
+/* Main section 2 */
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.film{
+    width: 100px;
+    height: 150px;
+    background: url(img/deadpool.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.watchlist{
+    width: 70%;
+    background-color: #1f1f1f;
+    padding: 20px;
+    display: grid;
+    align-content: center;
+    gap: 50px;
+    grid-template-columns: repeat(6,100px);
+}
+
+/* sectiom 3 */
+
+.section-3{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.Recommendations{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3 , 200px);
+}
+.recommendation{
+    background-color: red;
+    width: 200px;
+    height: 250px;
+    background: url(img/deadpool.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
