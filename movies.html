@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/movies.css">
+
 </head>
 <body>
+
      <!--header part-->
      <header>
         <!--Logo + Name-->
@@ -37,7 +39,7 @@
 
     <!--main part -->
     <main>
-        <section clas="first-main-section">
+        <section class="first-main-section">
             <div class="categories">
                 <!--genres-->
                 <select  id="Genre" name="Genre">
@@ -116,7 +118,7 @@
         
         <!--movies-->
         <section class="second-main-section">
-            <div class="mother-movies">
+            <div class="mother-movies" id="mother-movies">
                 <!--child1-->
                 <div class="child-movies">
                     <img src="/images/movie1.jpg" alt="">
@@ -543,5 +545,15 @@
         </div>
 
     </footer>
+
+    <div class="movie-info" id="movieInfo">
+        <h2 id="infoTitle"></h2>
+        <img id="infoImage" src="" alt="" style="width:100px;">
+        <p id="infoDetails"></p>
+        <button id="closeInfo">Close</button>
+    </div>
+
+
+    <script src="script.js" defer></script>     
 </body>
 </html>
