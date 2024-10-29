@@ -9,7 +9,7 @@ body{
     background: #000;
     color:#fff;
     font-family:Playfair Display;
-
+   
 }
 
 header{
@@ -29,6 +29,29 @@ header{
   
 }
 
+.burger-manu{
+    position:relative;
+    display:none;
+}
+
+.burger-manu-div-content{
+    width:100px;
+    position:absolute;
+    left:70%;
+    top:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color: aliceblue;
+    border:1px solid #fff;
+    display:none;
+}
+
+
+.burger-manu-div-content a{
+    text-decoration: none;
+}
 /* Second header div - paragraphs + navbar */
 .second-header-div{
     display:flex;
@@ -119,7 +142,7 @@ main{
     justify-content: center;
     align-items: center;
 
-    gap:80px;
+    gap:40px;
 }
 
 /* children of left content */
@@ -133,6 +156,7 @@ main{
     width:800px;
     height:450px;
     border-radius:1.5px;
+    object-fit: cover;
 }
 
 /* div under the img */
@@ -183,11 +207,20 @@ main{
     gap:2rem;
 }
 
-.pageNumbers  a{
-    text-decoration: none;
+.pageNumbers  p{
+   
     color:#fff;
     font-size:20px;
+    transition:0.5s;
+
 }
+
+.pageNumbers p:hover{
+    transform:scale(1.8);
+    cursor:pointer;
+}
+
+
 /* right content*/
 .right-content{
     display:flex;
@@ -197,6 +230,7 @@ main{
 
 .title-of-right-content{
     font-size:25px;
+    text-align: center;
 }
 
 .mother-of-news-div{
@@ -222,6 +256,12 @@ main{
     border-radius:1px;
     filter:brightness(1);
     object-fit: cover;
+    transition:0.9s;
+}
+
+.child-of-news img:hover{
+    transform:scale(1.1);
+    cursor:pointer;
 }
 
 .extract-from-news{
@@ -235,6 +275,14 @@ main{
     font-weight: bolder;
     width:max-content;
     text-align:right;
+
+    transition:0.5s;
+}
+
+.news-title:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+    text-shadow: 0px 0px 25px #A72929;
 }
 
 .extract{
@@ -246,6 +294,34 @@ main{
 }
 
 
+/* styling the need a movie  */
+.need-a-movie-div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    margin-top:5rem;
+}
+
+
+.QuizButton{
+    margin-top:15px;
+    width:200px;
+    height:40px;
+    background-color:#A72929;
+    font-size:16px;
+    font-family:Playfair Display;
+    font-weight: 900;
+    border-radius:3px;
+    box-shadow:0px 0px 15px red;
+    transition:0.7s;
+}
+
+
+.QuizButton:hover{
+    background-color: #fff;
+    cursor:pointer;
+}
 /* styling the footer part */
 footer{
     display:flex;

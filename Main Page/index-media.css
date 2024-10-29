@@ -1,0 +1,334 @@
+@media(min-width:350px){
+
+    body{
+        overflow-x: hidden;
+        flex-direction: column; /* Stack items vertically on small screens */
+
+    }
+
+    .header{
+        overflow-x: hidden;
+        overflow-y: hidden;
+  
+    }
+
+     
+    .burger-manu{
+        display:block;
+        margin-top:20px;    
+
+    }
+    .burger-manu img{
+        width:30px;
+        height:30px;
+        margin-left:50px;
+    }
+
+    .second-header-div{
+        display:none;
+    }
+
+
+    /* styling main part */
+    main{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .getStartedDivText h1{
+        font-size:30px;
+        line-height:31px;
+        margin-left:0px;
+        width:100%;
+    }
+
+    .getStartedDivText p{
+        display:none;
+    }
+
+    .getStartedDivBtn button{
+        width:15rem;
+    }
+
+    .secondSectionTitle h1{
+        margin-top:15px;
+        width:15rem;
+        font-size:30px;
+        margin-left:-70px;
+    }
+    
+    .genresSectionTitle h1{
+        font-size:30px;
+        text-align: center;
+    }
+
+    .testimonial-item {
+        width:280px;
+    }
+
+
+    .testimonial-item p{
+        font-size:1rem;
+        width:260px;
+    }
+
+
+
+    /* footer */
+    .second-footer-div{
+        flex-direction:column;
+        gap:30%;
+    }
+
+    .about-web p{
+        display:none;
+    }
+
+    .contact{
+        margin-top:50px;
+    }
+
+    .footer-form input{
+        margin-top:5px;
+    }
+}
+
+
+@media(min-width:650px){
+    .header{
+        overflow-x: hidden;
+        overflow-y: hidden;
+  
+    }
+
+     
+    .burger-manu{
+        display:block;
+        margin-top:20px;    
+
+    }
+    .burger-manu img{
+        width:30px;
+        height:30px;
+        margin-left:280px;
+    }
+
+    .second-header-div{
+        display:none;
+    }
+
+    /* styling the main part */
+      /* styling main part */
+    main{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .getStartedDivText h1{
+        font-size:35px;
+        line-height:39px;
+
+        width:70%;
+    }
+
+    .getStartedDivText p{
+        display:block;
+
+    }
+
+    .getStartedDivBtn button{
+        width:15rem;
+
+    }
+
+    .secondSectionTitle h1{
+        margin-top:15px;
+        width:15rem;
+        font-size:30px;
+        margin-left:-270px;
+    }
+    
+    .genresSectionTitle h1{
+        font-size:30px;
+        text-align: center;
+    }
+
+    .testimonial-item {
+        width:600px;
+    }
+
+
+    .testimonial-item p{
+        font-size:1.2rem;
+        width:260px;
+    }
+
+}
+
+
+@media (max-width: 880px){
+    .header{
+        overflow-x: hidden;
+        overflow-y: hidden;
+  
+    }
+
+     
+    .burger-manu{
+        display:block;
+        margin-top:20px;    
+
+    }
+    .burger-manu img{
+        width:30px;
+        height:30px;
+   
+    }
+
+    .second-header-div{
+        display:none;
+    }
+
+}
+
+
+@media(min-width:1300px){
+    .header{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:300px;
+        display:none;
+    }
+    .burger-manu img{
+        width:30px;
+        height:30px;
+        cursor: pointer;
+    }
+    .second-header-div{
+        display:block;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        
+        gap:30px;
+        margin-top:15px;
+    }
+
+    /*main */
+    main{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .getStartedDivText h1{
+        font-size:35px;
+        line-height:39px;
+
+        width:70%;
+    }
+
+    .getStartedDivText p{
+        display:block;
+
+    }
+
+    .getStartedDivBtn button{
+        width:15rem;
+
+    }
+
+    .secondSectionTitle h1{
+        margin-top:15px;
+        width:18rem;
+        font-size:30px;
+        margin-left:-120px;
+    }
+    
+    .genresSectionTitle h1{
+        font-size:30px;
+        text-align: center;
+    }
+
+    .testimonial-item {
+        width:600px;
+    }
+
+
+    .testimonial-item p{
+        font-size:1.2rem;
+        width:260px;
+    }
+
+     /* footer */
+     .second-footer-div{
+        flex-direction:row;
+        gap:30%;
+    }
+
+    .about-web p{
+        display:block;
+    }
+
+    .contact{
+        margin-top:0px;
+    }
+
+    .footer-form input{
+        margin-top:5px;
+    }
+}
+
+
+@media(min-width:1500px){
+    .header{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:300px;
+        display:none;
+    }
+    .burger-manu img{
+        width:30px;
+        height:30px;
+        cursor: pointer;
+    }
+    .second-header-div{
+        display:block;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        
+        gap:30px;
+        margin-top:15px;
+    }
+
+      /* footer */
+      .second-footer-div{
+        flex-direction:row;
+        gap:30%;
+    }
+
+    .about-web p{
+        display:block;
+    }
+
+    .contact{
+        margin-top:0px;
+    }
+
+    .footer-form input{
+        margin-top:5px;
+    }
+
+}
