@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profile.css">
     <title>Document</title>
+    <link rel="stylesheet" href="/Profile Page/profile.css">
 </head>
 <body>
-    <!-- Header----Navbar -->
+    <!--header part-->
     <header>
         <!--Logo + Name-->
         <div class="first-header-div">
-            <img src="img/Logo.png" alt="" width="100px">
+            <img src="/images/logo.png" alt="">
+        </div>
+
+
+        <div  class="burger-manu">
+            <img id="burger-manu" src="/images/burger-manu.png" alt="">
+        </div>
+
+        <div id="burgerContent" class="burger-manu-div-content">
+            <img id="x-button" style="width:15px;height:15px; margin-left:70px; margin-top:10px;" src="/images/close-icon.png" alt="">
+            <p><a href="/Main Page/index.html">Home</a></p>
+            <p><a href="/movies.html">Movies</a></p>
+            <p><a href="/Articles.html">Articles</a></p>
+            <p><a href="/Profile Page/profile.html">My account</a></p>
         </div>
 
         <!--second header  div -->
@@ -21,7 +34,7 @@
             <!--Search-->
             <div class="search-div">
                 <input class="search-input" type="text" placeholder="Search...">
-                <img src="img/icons8-search-30.png" alt="">
+                <img src="/images/Search-icon.png" alt="">
             </div>
 
 
@@ -33,60 +46,70 @@
                 <p><a href="/Profile Page/profile.html">My account</a></p>
             </nav>
         </div>
-
-       
+        
     </header>
-    <!-- Profile Section -->
-     <main>
-        <section class="section-1">
-            <div class="profile-info">
-                <div class="profile-pic"></div>
-                <div class="about">
-                    <h2>Giorgi Bibilashvili</h2>
-                    <p><b>Email:</b> giorgibibilashvili97@gmail.com</p>
+
+    <main>
+        <hr>
+        <!--first main section-->
+        <section class="first-main-section">
+            <div class="user-Profile">
+                <img src="/images/profile.png" alt="">
+            </div>
+
+            <div class="profile-info-page">
+                <h2>USERNAME</h2>
+                <hr>
+                <div class="under-username">
+                    <p>Email:<span></span></p>
+                    <p class="name">User Name:<span></span></p>
                 </div>
             </div>
         </section>
 
-        <section class="section-2">
-            <h2 id="h2-section2">My Watchlist:</h2>
-            <div class="watchlist">
-                <div class="film1 film"></div>
-                <div class="film2 film"></div>
-                <div class="film3 film"></div>
-                <div class="film4 film"></div>
-                <div class="film5 film"></div>
-                <div class="film6 film"></div>
-                <div class="film7 film"></div>
-                <div class="film8 film"></div>
-                <div class="film9 film"></div>
-                <div class="film10 film"></div>
-                <div class="film11 film"></div>
-                <div class="film12 film"></div>
-               
+        <!--second section - Watching list-->
+        <section class="second-main-section">
+            <h1>My Watchlist:</h1>
+            <div class="favourite-movies">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
+                <img src="/images/film-icon.png" alt="">
             </div>
         </section>
 
-        <section class="section-3">
-            <h2 id="recommendations-title">Recommendations Crafted from Your Preferences:</h2>
-            <div class="Recommendations">
-                <div class="recommendation1 recommendation"></div>
-                <div class="recommendation2 recommendation"></div>
-                <div class="recommendation3 recommendation"></div>
-                <div class="recommendation4 recommendation"></div>
-                <div class="recommendation5 recommendation"></div>
-                <div class="recommendation6 recommendation"></div>
-                <div class="recommendation7 recommendation"></div>
-                <div class="recommendation8 recommendation"></div>
+        <!--third section recommendation --->
+        <section class="thrid-main-section">
+            <h1>Recommendations Crafted from Your Preferences:</h1>
+            <div class="recomendation-div">
+                <img src="/images/movie1.jpg" alt="">
+                <img src="/images/movie2.jpg" alt="">
+                <img src="/images/movie3.jpg" alt="">
+                <img src="/images/movie4.jpg" alt="">
+                <img src="/images/movie5.jpg" alt="">
+                <img src="/images/movie6.jpg" alt="">
+                <img src="/images/movie7.jpg" alt="">
+                <img src="/images/movie8.jpg" alt="">
+                <img src="/images/movie9.jpg" alt="">
+                <img src="/images/movie10.jpg" alt="">
             </div>
         </section>
-     </main>
+    </main>
 
-      <!--footer-->
+
+        <!--footer-->
     <footer>
         <!--logo and the website name-->
         <div class="footer-logo-div">
-            <img src="img/Logo.png" alt="">
+            <img src="/images/logo.png" alt="">
         </div>
 
         <!--div that involves quick links, about paragraph , contact us-->
@@ -117,7 +140,7 @@
                 <h2>Contact Us</h2>
                 <form class="footer-form">
                     <input type="email" placeholder="Enter Your Email"> <br>
-                    <input id="message-input" type="text" placeholder="Your Message">
+                    <input id="message-input" type="text" placeholder="Your Message"> <br>
                     <input id="button-input" type="button" value="Send">
                 </form>
             </div>

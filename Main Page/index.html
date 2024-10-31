@@ -54,12 +54,72 @@
         <!-- first div -->
         <div class="getStartedDiv">
             <div class="getStartedDivText">
-                <h1>Need a movie? We've got the perfect match.</h1>
+                <h1>Need a movie? We've got the perfect  match.</h1>
                 <p>Find your next favorite movie in seconds</p>
             </div>
             <div class="getStartedDivBtn">
-                <button>Let's get started</button>
+                <button id="quizStartButton">Let's get started</button>
             </div>
+        </div>
+
+
+        <div id="quizDiv" class="quiz-div">
+            <img style="cursor:pointer" id="exitBtn" src="/images/exit.png" alt="">
+            <h1 class="quiz-div-h1">Welcome to the Cinematic Experience</h1>
+            <form class="quiz-form">
+                <!--div of first question - How are you today-->
+                <div class="question feeling-quesion">
+                    <p>1. How Are You Today?</p>
+                    <!--good-->
+                    <input id="Good" type="radio" name="feeling" value = "Good" >
+                    <label for="Good">Good</label> <br> 
+                    <!--great-->
+                    <input id="Great" type="radio" name="feeling" value="Great">
+                    <label for="Great">Great</label> <br>
+                    <!--Sad-->
+                    <input id="Sad" type="radio" value="Sad" name="Sad">
+                    <label for="Sad">Sad</label> <br>
+                    <!--Okay-->
+                    <input id="Okay" type="radio" value="Okay" name="Okay">
+                    <label for="Okay">Okay</label>
+                </div>
+
+                <!--divs of second section - Question about genre-->
+                <div class=" question genre-question">
+                    <p>2. Please choose a genre:</p>
+                    <!--Comedy-->
+                    <input id="Comedy" type="radio" name="genre" value = "Comedy" >
+                    <label for="Comedy">Comedy</label> 
+                    <!--Drama-->
+                    <input id="Drama" type="radio" name="genre" value = "Drama">
+                    <label for="Drama">Drama</label>
+                    <!--Action-->
+                    <input id="Action" type="radio" name="genre" value="Action">
+                    <label for="Action">Action</label> <br>
+                    <!--Crime-->
+                    <input id="Crime" type="radio" name="genre" value="Crime">
+                    <label for="Crime">Crime</label>
+                    <!--Romance-->
+                    <input id="Romance" type="radio" name="genre" value="Romance">
+                    <label for="Romance">Romance</label>
+                    <!--thriller-->
+                    <input id="Thriller" type="radio" name="genre" value="Thriller">
+                    <label for="Thriller">Thriller</label>
+                </div>
+                
+                <!--div of third quesiont - old or new movies-->
+                <div class=" question old-vs-new-movies-question">
+                    <p>3.Do you prefer classic films or recent releases?</p>
+                    <!--classic films-->
+                    <input id="Classic" type="radio" name="Year" value="Classic">
+                    <label for="Classic">Classic films</label> <br>
+                    <!--Recent releases-->
+                    <input id="Recent" type="radio" name="year" value="Recent">
+                    <label for="Recent">Recent releases</label>
+                </div>  
+
+                <input  class="button-inp" type="button" value="Check Result">
+            </form>
         </div>
 
         <!-- second div -->
@@ -168,14 +228,14 @@
         
         <div class="genresSectionMovies">
             <div class="genresSectionMoviesChild1">
-                <div class="comedy-genre"><h1>Comedy</h1></div>
-                <div class="action-genre"><h1>Action & adventure</h1></div>
-                <div class="horor-genre"><h1>Horror</h1></div>
+                <div class="comedy-genre"><h1 id="genre-h1">Comedy</h1></div>
+                <div class="action-genre"><h1 id="genre-h1">Action & adventure</h1></div>
+                <div class="horor-genre"><h1 id="genre-h1">Horror</h1></div>
             </div>
             <div class="genresSectionMoviesChild2">
-                <div class="drama-genre"><h1>Drama</h1></div>
-                <div class="romantic-comedy-genre"><h1>Romantic comedy</h1></div>
-                <div class="Mystery-genre"><h1>Mystery</h1></div>
+                <div class="drama-genre"><h1 id="genre-h1">Drama</h1></div>
+                <div class="romantic-comedy-genre"><h1 id="genre-h1">Romantic comedy</h1></div>
+                <div class="Mystery-genre"><h1 id="genre-h1">Mystery</h1></div>
             </div>
         </div>
     </section>

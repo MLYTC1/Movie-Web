@@ -44,3 +44,49 @@ burgerManu.addEventListener('click',()=> {
 xButton.addEventListener("click", ()=> {
       burgerContent.style.display='none'
 })
+
+
+////////////////////////////////////////////////
+//functional for the quiz
+
+async function fetchMovies() {
+    const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+    const options = {
+        method: 'GET',
+        headers: {
+		'x-rapidapi-key': '0255cc476amsh4a76ddd84018ce9p187cb1jsnbed9340b7ae8',
+		'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
+        }
+    };
+
+    try {
+        const response = await fetch(url, options);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        movies = result; 
+        
+        console.log(movies); 
+        displayMovies(movies); 
+        
+    } catch (error) {
+        console.error('Error fetching movies:', error);
+    }
+}
+
+
+
+const quizDiv = document.getElementById("quizDiv")
+const quizStartButton = document.getElementById("quizStartButton")
+const exitBtn = document.getElementById('exitBtn')
+
+quizStartButton.addEventListener('click', ()=> {
+    quizDiv.style.display = 'flex'
+})
+
+exitBtn.addEventListener('click',()=>{
+    quizDiv.style.display = 'none'
+})
+

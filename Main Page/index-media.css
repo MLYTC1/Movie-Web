@@ -286,6 +286,8 @@
 
 
 @media(min-width:1500px){
+    body{ font-family:Playfair Display;
+    }
     .header{
         overflow-x: hidden;
         overflow-y: hidden;

@@ -8,8 +8,8 @@
 body{
     background: #000;
     color:#fff;
-    font-family:Montserrat;
-
+    font-family:Playfair Display;
+   
 }
 
 header{
@@ -29,6 +29,29 @@ header{
   
 }
 
+.burger-manu{
+    position:relative;
+    display:none;
+}
+
+.burger-manu-div-content{
+    width:100px;
+    position:absolute;
+    left:70%;
+    top:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color: aliceblue;
+    border:1px solid #fff;
+    display:none;
+}
+
+
+.burger-manu-div-content a{
+    text-decoration: none;
+}
 /* Second header div - paragraphs + navbar */
 .second-header-div{
     display:flex;
@@ -92,10 +115,124 @@ nav a{
     color:#fff;
 }
 
-/* footer */
+/*styling the main part */
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+
+}
+
+hr{
+    width:100%;
+}
+
+.first-main-section{
+    margin-top:50px;
+    display:flex;
+    flex-direction:row;
+    margin-left:300px;
+    gap:10%;
+}
+
+.user-Profile img{
+    width:256px ;
+    height:auto;
+    object-fit: cover;
+    border-radius:50%;
+    box-shadow: 0px 0px 15px #A72929;
+}
+
+
+.profile-info-page{
+    display:flex;
+    flex-direction: column;
+}
+
+ .profile-info-page hr{
+    width:110%;
+}
+.profile-info-page h2{
+    font-size:35px;
+}
+
+.under-username{
+    margin-top:20px;
+    gap:20%;
+}
+
+.under-username p{
+    font-size:28px;
+}
+
+.name{
+    margin-top:20px;
+}
+
+.second-main-section{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-left:350px;
+    margin-top:50px;
+
+}
+
+
+.second-main-section h1{
+    font-size:30px;
+}
+
+.favourite-movies{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(6,170px);
+    justify-items: center; 
+    align-items: center;
+    object-fit: cover;
+    gap:2.5%;
+}
+
+.favourite-movies img{
+    width:170px;
+    height:auto;
+    filter: brightness(70%);
+}
+
+.thrid-main-section{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-left:350px;
+    margin-top:80px;
+}
+
+.thrid-main-section h1{
+    font-size:30px;
+}
+
+.recomendation-div{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns: repeat(5,200px);
+    justify-items: center; 
+    align-items: center;
+    object-fit: cover;
+    gap:3.5%;
+}
+
+.recomendation-div img{
+    width:200px;
+    height:300px;
+    object-fit: cover;
+    border-radius:3px;
+    filter: brightness(70%);
+}
+
 /* styling the footer part */
 footer{
-    border-top: 1px solid red;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -191,113 +328,4 @@ footer{
 #button-input:hover{
     background-color: #A72929;
     cursor:pointer;
-}
-
-/* Main section 1 */
-main{
-    margin-inline: 650px;
-    display:flex;
-    flex-direction:Column;
-    justify-content:center;
-    margin-top:30px;
-}
-.section-1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.profile-info{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-.profile-pic{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    background: url(img/IMG_2021.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-    gap: 10px;
-}
-
-/* Main section 2 */
-
-.section-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top:100px;
-    margin-left:150px;
-
-}
-
-#h2-section2{
-    text-align:right;
-    margin-left:0px;
-    font-size:1.8rem;
-    margin-left:-390px;
-}
-
-.film{
-    width: 120px;
-    height: 150px;
-    background: url(img/deadpool.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.watchlist{
-    width: 190%;
-    padding: 40px;
-    display: grid;
-    align-content: center;
-    gap: 50px;
-    grid-template-columns: repeat(6,100px);
-    border-radius:3px;
-}
-
-/* sectiom 3 */
-
-.section-3{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-left:450px;
-}
-.Recommendations{
-    display: grid;
-    gap: 50px;
-    grid-template-columns: repeat(4, 200px);
-}
-.recommendation{
-    background-color: red;
-    width: 200px;
-    height: 250px;
-    background: url(img/deadpool.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#recommendations-title{
-    margin-left:-190px;
-    font-size:1.7rem;
-    width:45rem;
 }
