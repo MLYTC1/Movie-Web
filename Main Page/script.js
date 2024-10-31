@@ -31,3 +31,16 @@ async function fetchTopMovies() {
 
 // Call the function to execute
 fetchTopMovies();
+
+
+//burger manu functional
+const burgerManu = document.getElementById("burger-manu")
+const burgerContent = document.getElementById("burgerContent")
+const xButton = document.getElementById("x-button")
+burgerManu.addEventListener('click',()=> {
+    burgerContent.style.display='flex'
+})
+
+xButton.addEventListener("click", ()=> {
+      burgerContent.style.display='none'
+})

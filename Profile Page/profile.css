@@ -195,7 +195,11 @@ footer{
 
 /* Main section 1 */
 main{
-    margin-inline: 600px;
+    margin-inline: 650px;
+    display:flex;
+    flex-direction:Column;
+    justify-content:center;
+    margin-top:30px;
 }
 .section-1{
     display: flex;
@@ -207,12 +211,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 30px;
 }
 
 .profile-pic{
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     background: url(img/IMG_2021.jpeg);
     background-position: center;
@@ -236,10 +240,20 @@ main{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top:100px;
+    margin-left:150px;
+
+}
+
+#h2-section2{
+    text-align:right;
+    margin-left:0px;
+    font-size:1.8rem;
+    margin-left:-390px;
 }
 
 .film{
-    width: 100px;
+    width: 120px;
     height: 150px;
     background: url(img/deadpool.jpg);
     background-position: center;
@@ -247,29 +261,30 @@ main{
     background-repeat: no-repeat;
 }
 .watchlist{
-    width: 70%;
-    background-color: #1f1f1f;
-    padding: 20px;
+    width: 190%;
+    padding: 40px;
     display: grid;
     align-content: center;
     gap: 50px;
     grid-template-columns: repeat(6,100px);
+    border-radius:3px;
 }
 
 /* sectiom 3 */
 
 .section-3{
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    margin-left:450px;
 }
 .Recommendations{
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(3 , 200px);
+    grid-template-columns: repeat(4, 200px);
 }
 .recommendation{
     background-color: red;
@@ -279,4 +294,10 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#recommendations-title{
+    margin-left:-190px;
+    font-size:1.7rem;
+    width:45rem;
 }
