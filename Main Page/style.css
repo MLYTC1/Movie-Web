@@ -93,7 +93,7 @@ header{
     flex-direction:row;
     justify-content:center;
     align-items:center;
-
+    margin-top:-30px;
 }
 
 .search-input{
@@ -107,9 +107,10 @@ header{
 
 .search-div img{
     position:absolute;
-    left:90%;
+    left:92%;
     width:15px;
     height:16px;
+    margin-top:30px;
 }
 
 /* navbar */
@@ -202,8 +203,8 @@ nav a{
     flex-direction:column;
     justify-content: center;
     align-items:center;
-    width:800px;
-    height:720px;
+    width:700px;
+    height:auto;
     background-color:#000;
     border-radius:3px;
     color:#000;
@@ -212,14 +213,12 @@ nav a{
     display:none;
 }
 
-.quiz-div-h1{
-    font-size:30px;
-    text-shadow: 0px 0px 15px #A72929;
-}
 
 .quiz-form{
     margin-top:20px;
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-direction:column;
 }
 
@@ -229,32 +228,33 @@ nav a{
 }
 
 .question p{
-    font-size:30px;
+    font-size:40px;
     font-family:Playfair Display;
-
+    margin-bottom:15px;
 }
 input{
-    margin-top:15px;
-    margin-left:15px;
+    margin-top:30px;
+    margin-left:50px;
 }
 label{
     font-family:Playfair Display;
-    font-size:22px;
+    font-size:29px;
+    margin-left:20px;
 }
 
 .quiz-div img{
     margin-left:90%;
-    margin-top:0px;
+    margin-top:10px;
 }
 
 .button-inp{
     width:200px;
     height:46px;
-    margin-left:200px;
+    margin-left:0px;
     margin-top:50px;
     margin-bottom:20px;
     font-family:Playfair Display;
-    font-size:18px;
+    font-size:20px;
     border-radius:3px;
     background-color: #F0AC00;
     color:#fff;
@@ -266,6 +266,18 @@ label{
 .button-inp:hover{
     cursor:pointer;
     background-color: #A72929;
+}
+
+.genre-question p{
+    margin-left:90px;
+}
+
+.old-vs-new-movies-question p{
+    text-align: center;
+}
+
+.old-vs-new-movies-question input{
+    margin-left:80px;
 }
 /*******************************************/
 .mostMatchedDiv{

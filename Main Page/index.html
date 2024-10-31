@@ -65,28 +65,27 @@
 
         <div id="quizDiv" class="quiz-div">
             <img style="cursor:pointer" id="exitBtn" src="/images/exit.png" alt="">
-            <h1 class="quiz-div-h1">Welcome to the Cinematic Experience</h1>
             <form class="quiz-form">
                 <!--div of first question - How are you today-->
-                <div class="question feeling-quesion">
-                    <p>1. How Are You Today?</p>
+                <div style="display:none" class="question feeling-quesion">
+                    <p>How Are You Today?</p>
                     <!--good-->
                     <input id="Good" type="radio" name="feeling" value = "Good" >
-                    <label for="Good">Good</label> <br> 
+                    <label for="Good">I'm feeling good.</label> <br> 
                     <!--great-->
                     <input id="Great" type="radio" name="feeling" value="Great">
-                    <label for="Great">Great</label> <br>
+                    <label for="Great">I'm feeling great</label> <br>
                     <!--Sad-->
-                    <input id="Sad" type="radio" value="Sad" name="Sad">
-                    <label for="Sad">Sad</label> <br>
+                    <input id="Sad" type="radio" value="Sad" name="feeling">
+                    <label for="Sad">I'm a bit sad.</label> <br>
                     <!--Okay-->
-                    <input id="Okay" type="radio" value="Okay" name="Okay">
-                    <label for="Okay">Okay</label>
+                    <input id="Okay" type="radio" value="Okay" name="feeling">
+                    <label for="Okay">I'm doing okay.</label>
                 </div>
 
                 <!--divs of second section - Question about genre-->
-                <div class=" question genre-question">
-                    <p>2. Please choose a genre:</p>
+                <div style="display:none" class=" question genre-question">
+                    <p>Please choose a genre</p>
                     <!--Comedy-->
                     <input id="Comedy" type="radio" name="genre" value = "Comedy" >
                     <label for="Comedy">Comedy</label> 
@@ -108,17 +107,19 @@
                 </div>
                 
                 <!--div of third quesiont - old or new movies-->
-                <div class=" question old-vs-new-movies-question">
-                    <p>3.Do you prefer classic films or recent releases?</p>
+                <div style="display:none" class=" question old-vs-new-movies-question">
+                    <p>Do you prefer classic films or recent releases?</p>
                     <!--classic films-->
                     <input id="Classic" type="radio" name="Year" value="Classic">
-                    <label for="Classic">Classic films</label> <br>
+                    <label for="Classic">Classic films</label> 
                     <!--Recent releases-->
                     <input id="Recent" type="radio" name="year" value="Recent">
                     <label for="Recent">Recent releases</label>
                 </div>  
 
-                <input  class="button-inp" type="button" value="Check Result">
+                <input id="nextBtn" class="button-inp" type="button" value="Next">
+
+        
             </form>
         </div>
 
