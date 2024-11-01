@@ -5,32 +5,32 @@
 // });
 
 
-const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
-const options = {
-	method: 'GET',
-	headers: {
-		'x-rapidapi-key': '00a2fa21f1msh78be1c180a27124p164793jsn8c96faba6e6e',
-		'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
-	}
-};
+// const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'x-rapidapi-key': '00a2fa21f1msh78be1c180a27124p164793jsn8c96faba6e6e',
+// 		'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
+// 	}
+// };
 
-async function fetchTopMovies() {
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text(); // Fetch the raw text response
+// async function fetchTopMovies() {
+//     try {
+//         const response = await fetch(url, options);
+//         const result = await response.text(); // Fetch the raw text response
         
-        // Split by endlines or commas if necessary and log each on a new line
-        const lines = result.split('\n'); // Assuming each entry is on a new line
-        lines.forEach(line => {
-            console.log(line); // Log each line individually
-        });
-    } catch (error) {
-        console.error('Error fetching movies:', error);
-    }
-}
+//         // Split by endlines or commas if necessary and log each on a new line
+//         const lines = result.split('\n'); // Assuming each entry is on a new line
+//         lines.forEach(line => {
+//             console.log(line); // Log each line individually
+//         });
+//     } catch (error) {
+//         console.error('Error fetching movies:', error);
+//     }
+// }
 
-// Call the function to execute
-fetchTopMovies();
+// // Call the function to execute
+// fetchTopMovies();
 
 
 //burger manu functional
@@ -47,125 +47,157 @@ xButton.addEventListener("click", ()=> {
 
 
 ////////////////////////////////////////////////
-//functional for the quiz
-// let movies = [];
+//working on the quiz
+const quizDiv = document.getElementById("quizDiv");
+const quizStartButton = document.getElementById("quizStartButton");
+const exitBtn = document.getElementById('exitBtn');
+const nextBtn = document.getElementById("nextBtn");
+const questions = document.getElementsByClassName("question");
 
-// async function fetchMovies() {
-//     const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
-//     const options = {
-//         method: 'GET',
-//         headers: {
-// 		'x-rapidapi-key': '0255cc476amsh4a76ddd84018ce9p187cb1jsnbed9340b7ae8',
-// 		'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
-//         }
-//     };
+let movies = [];
+let currentQuestionIndex = 0; // Initialize currentQuestionIndex
 
-//     try {
-//         const response = await fetch(url, options);
-//         if (!response.ok) {
-//             throw new Error(`HTTP error! status: ${response.status}`);
-//         }
+async function fetchMovies() {
+    const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+    const options = {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-key': '672449c84amsh219f8745f6d375cp1562acjsn16ae70421009',
+            'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
+        }
+    };
 
-//         const result = await response.json();
-//         movies = result; 
+    try {
+        const response = await fetch(url, options);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        movies = result; 
         
-//         console.log(movies); 
-//         displayMovies(movies); 
+        console.log("Movies fetched:", movies); // Log the fetched movies
         
-//     } catch (error) {
-//         console.error('Error fetching movies:', error);
-//     }
-// }
+    } catch (error) {
+        console.error('Error fetching movies:', error);
+    }
+}
 
+function pickedTheAnswer(index) {
+    const feelingArray = ['Good', 'Great', 'Sad', 'Okay'];
+    const genreArray = ['Adventure', 'Comedy', 'Biography', 'Drama', 'Music'];
+    const yearArray = ['Classic', 'Recent'];
 
+    let finalArray = [];
 
+    if (index === 0) {
+        finalArray = feelingArray;
+    } else if (index === 1) {
+        finalArray = genreArray;
+    } else if (index === 2) {
+        finalArray = yearArray;
+    }
 
-const quizDiv = document.getElementById("quizDiv")//Quiz Div
-const quizStartButton = document.getElementById("quizStartButton") //Start
-const exitBtn = document.getElementById('exitBtn')//Exit
-const nextBtn = document.getElementById("nextBtn") //Next
-
-const questions = document.getElementsByClassName("question")
-
-
-let currentQuestionIndex = 0;
-quizStartButton.addEventListener('click', ()=> {
-    quizDiv.style.display = 'flex'
-    showQuestions(currentQuestionIndex)
-})
-
-exitBtn.addEventListener('click',()=>{
-    quizDiv.style.display = 'none'
-})
-
-
-
-//function which shows the questions by the index
-function showQuestions(index){
-    for(let i = 0 ; i < questions.length; i++){
-        if(i == index){
-            questions[i].style.display = 'block'
-        }else{
-            questions[i].style.display = 'none'
+    for (let item of finalArray) {
+        const answer = document.getElementById(item);
+        if (answer && answer.checked) {
+            return answer; // Return the checked answer
         }
     }
 }
 
-
-//function that ensures that user selected on of the answers
-function pickedTheAnswer(index){
-    //creating the arrays to put answers's ids(answers with the same id will be put in the same array)
-    const feelingArray = ['Good' , 'Great' , 'Sad','Okay']
-    const genreAraray = ['Comedy', 'Drama', 'Action', 'Crime', 'Romance', 'Thriller']
-    const yearArray = ['Classic' , 'Recent']
-
-    let finalArray = []
-
-    if(index == 0){
-        finalArray = feelingArray
-    }else if(index == 1){
-        finalArray = genreAraray
-    }else if(index == 2){
-        finalArray == yearArray
+// Function to show questions based on index
+function showQuestions(index) {
+    for (let i = 0; i < questions.length; i++) {
+        questions[i].style.display = (i === index) ? 'block' : 'none'; //ternayr
     }
-
-    for(let item of finalArray){
-        const answer = document.getElementById(item)
-        if(answer == true){
-            return answer
-        }
-    }
-
-   
 }
 
-//next button
+// Next button logic
 nextBtn.addEventListener('click', () => {
-   
-    const pickedAnswer = pickedTheAnswer(currentQuestionIndex) //saved the selected answer by its id
-    if(pickedAnswer == false){ //if use did not pick the unswer
-        alert('You Have To Choose One Of The Answers!')
-    }else{
-        currentQuestionIndex++;
-
-        if(currentQuestionIndex < questions.length){
-            showQuestions(currentQuestionIndex)//next question will be appeared
-        }else{
-            //the quiz is finished and the result is ready:
-            const pickedGenre = pickedTheAnswer(1) // genre
-            let genreLabel = pickedGenre.value
-
-            const img = document.createElement('img')
-
-            let filterMovies = movies.filter(function(movie){
-                return movie.genre.includes(genreLabel)
-            })
-
-            const randomIndex = Math.floor(Math.random() * filterMovies.length);
-            img.src = filterMovies[randomIndex].image;
-            quizDiv.innerHTML = '';
-            quizDiv.appendChild(img);
-        }
+    const pickedAnswer = pickedTheAnswer(currentQuestionIndex);
+    
+    // Check if an answer is selected
+    if (!pickedAnswer) {
+        return ; // Exit if no answer is selected, without showing an alert
     }
 
-})
+    currentQuestionIndex++; // Move to the next question
+
+    if (currentQuestionIndex < questions.length) {
+        showQuestions(currentQuestionIndex);
+    } else {
+        const pickedGenre = pickedTheAnswer(1); // genre
+        if (pickedGenre) {
+            const genreLabel = pickedGenre.value;
+            console.log(`Selected Genre: ${genreLabel}`); // Log the selected genre
+
+            const filterMovies = movies.filter(movie => {
+                console.log(`Checking movie: ${movie.title} for genre: ${genreLabel}`); // Log the check
+                return movie.genre.includes(genreLabel);
+            });
+
+            console.log(`Filtered Movies: ${filterMovies.length}`); // Log the number of filtered movies
+
+            if (filterMovies.length > 0) {
+                const selectedMovie = filterMovies[0]; // Get the first movie
+                quizDiv.innerHTML = ''; // Clear previous content
+
+                // Create and append the paragraph element
+                const resultText = document.createElement('h1');
+                resultText.textContent = 'The Result:'; // Set the text for the paragraph
+                quizDiv.appendChild(resultText);
+
+                // Create and style the image element
+                const img = document.createElement('img');
+                img.src = selectedMovie.image || 'placeholder.jpg';
+                img.alt = selectedMovie.title || 'Movie Poster';
+                
+                // Set the desired styles
+                img.style.width = '300px';
+                img.style.height = '400px';
+                img.style.marginLeft = '50px';
+                quizDiv.style.width = '400px' 
+                quizDiv.style.height = '500' + 'px'
+                // Append the image to the quizDiv
+                quizDiv.appendChild(img);
+                
+                // Create and append the exit button
+                // Create and append the exit button
+                const exitResultButton = document.createElement('button');
+                exitResultButton.textContent = 'Exit';
+                exitResultButton.id = 'exitResultButton'; // Set an ID for the button
+                exitResultButton.style.width = '60px';
+                exitResultButton.style.height = '36px';
+                exitResultButton.style.borderRadius = '3px';
+                exitResultButton.style.backgroundColor = 'red';
+                exitResultButton.style.color = '#fff'; // Set the text color correctly
+ 
+                 quizDiv.appendChild(exitResultButton);
+
+                // Add event listener to exit the result
+                exitResultButton.addEventListener('click', () => {
+                    quizDiv.style.display = 'none'; // Hide the quizDiv
+                });
+                
+            } else {
+                console.log('No movies found for the selected genre.');
+            }
+        }
+    }
+});
+
+// Start the quiz
+quizStartButton.addEventListener('click', () => {
+    quizDiv.style.display = 'flex';
+    currentQuestionIndex = 0; // Reset index
+    showQuestions(currentQuestionIndex);
+});
+
+// Exit the quiz
+exitBtn.addEventListener('click', () => {
+    quizDiv.style.display = 'none';
+});
+
+// Fetch movies to be used in the quiz
+fetchMovies();

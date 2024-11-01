@@ -62,7 +62,7 @@ async function fetchMovies() {
     const options = {
         method: 'GET',
         headers: {
-		'x-rapidapi-key': '0255cc476amsh4a76ddd84018ce9p187cb1jsnbed9340b7ae8',
+		'x-rapidapi-key': '672449c84amsh219f8745f6d375cp1562acjsn16ae70421009',
 		'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
         }
     };
@@ -83,6 +83,8 @@ async function fetchMovies() {
         console.error('Error fetching movies:', error);
     }
 }
+
+
 
 
 function displayMovies(moviesToDisplay) {
@@ -164,3 +166,5 @@ document.getElementById('IMDB').addEventListener('change', filterAndSearchMovies
 document.getElementById('Country').addEventListener('change', filterAndSearchMovies);
 
 fetchMovies();
+
+const watchListButton = document.getElementById('watchListButton')
